@@ -1,0 +1,34 @@
+name: terraform-inventory
+version: 0.7.1-DEV
+artifacts:
+- classifier: darwin
+  targets:
+  - executable: terraform-inventory
+    package: .
+  archive: tgz
+  env:
+    GOARCH: amd64
+    GOOS: darwin
+- classifier: linux
+  targets:
+  - executable: terraform-inventory
+    package: .
+  archive: tar.gz
+  env:
+    GOARCH: amd64
+    GOOS: linux
+- classifier: win
+  targets:
+  - executable: terraform-inventory.exe
+    package: .
+  archive: zip
+  env:
+    GOARCH: amd64
+    GOOS: windows
+repositories:
+  github:
+    group: cbegin
+    artifact: terraform-inventory
+    type: github
+    roles:
+    - release
