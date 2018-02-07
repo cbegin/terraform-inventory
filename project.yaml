@@ -1,5 +1,5 @@
 name: terraform-inventory
-version: 0.7.1-DEV
+version: 0.7.1-DEV2
 artifacts:
 - classifier: darwin
   targets:
